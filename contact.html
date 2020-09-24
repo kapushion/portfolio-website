@@ -2,12 +2,72 @@
 <html>
 <head>
 <style>
+
+
+body{
+            background-color: #1F2833;
+        }
 table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
   font-size: 40px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #cfc6c7;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #cfc6c7;
+  color: white;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.cc {
+    color: #66FCF1;
+}
 </style>
 <title> Utkarsh Atre </title>
 </head>
@@ -15,21 +75,17 @@ table, th, td {
 
 <h1> Contact me  </h1>
 <br><br>
-<nav style="font-size: 30px;">
-    <a href="./index.html">Home</a> |
-    <a href="./exp.html">Experience</a> |
-    <a href="./projects.html">Projects</a> |
-    <a href="./contact.html">contact me</a>
-    </nav>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<ul>
+  <li><a href="./index.html">Home</a></li>
+  <li> <a href="./exp.html">Experience</a> </li>
+  <li><a href="./projects.html">Projects</a></li>
+  <li><a href="./contact.html" class="active">contact me</a></li>
+</ul>
+
+<br><br><br><br><br><br><br>
 <img src="../Downloads/undraw_contact_us_15o2.svg" style="width:700px; height:400px ;" >
-<table style="  margin-left: auto; margin-right: auto;">
+<table id="customers">
   <tr>
     <th> modes of contact </th>
     <th>Links</th>
@@ -54,3 +110,5 @@ table, th, td {
 
 </body>
 </html>
+
+
